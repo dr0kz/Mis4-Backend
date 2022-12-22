@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5500/mis
+    username: postgres
+    password: 1q2w3e4r5t
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+flyway:
+  user: postgres
+  password: 1q2w3e4r5t
+  url: jdbc:postgresql://localhost:5500/mis
+  locations: filesystem:db/migration
